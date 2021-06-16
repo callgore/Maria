@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+html {
+    font-family: Helvetica;
+    overflow-x:hidden;
+
+}
+body {
+    background-color: #F0F3F4;
+}
+#tareas {
+    position: absolute;
+    left: 65%;
+    top: 1%;
+    text-align: left;
+    height: 100%;
+    padding: 2%;
+}
+#btnCalculadora {
+    margin-left: -99%;
+    margin-top: -27%;
+    height: 200px;
+    width: 10px;
+    background: chartreuse;
+    border: hidden;
+    border-radius: 10px 10px 10px 10px;
+    color: transparent;
+    cursor: pointer;
+}
+.calc_body {
+    margin-top: 5%;
+    margin-left: -130%;
+    background-color: #fafafa;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    width: 20%;
+    animation-fill-mode: forwards;
+}
+@keyframes abrirCalculadora{
+    100% {
+       transform:translate(350px);
+    }
+}
+@keyframes cerrarCalculadora{
+    0% {
+        transform: translate(350px);
+    }
+}
+
+.result input {
+    background-color: #212121;
+    color: #fafafa;
+    border-radius: 8px 8px 0 0;
+    padding: 20px;
+    font-size: 2.5rem;
+    width: 119%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+    .buttons input {
+        width: 80px;
+        height: 80px;
+        border: none;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: .2s linear all;
+    }
+
+        .buttons input:hover {
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+
+        .buttons input:active {
+            background-color: #bdbdbd;
+        }
+
+.igual {
+    background-color: #f57f17;
+}

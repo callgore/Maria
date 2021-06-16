@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+    <script src="brain.js"></script>
+    <script src="annyang.js"></script>
+    <script src="asistente.js"></script>
+    <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+</head>
+<body>
+    <section class="bloquetareas">
+        <article>
+            <div id="tareas">
+                <span>Dia y Tarea:</span> <input id="txtAgregar" />
+                <button id="btnAgregar">agregar</button>
+                <br />
+            </div>
+        </article>
+    </section>
+    <section>
+        <article>
+            <center>
+                <form name="Calculadora" class="caluladora" id="caluladora">
+                    <div class="calc_body">
+                        <div class="result">
+                            <input type="text" name="txtboxnros" value="0" disabled>
+                        </div>
+
+                        <div class="buttons">
+                            <input type="button" value="">
+                            <input type="button" value="√" onclick="raiz()">
+                            <input type="button" value="^" onclick="ingresaoperacion('**')">
+                            <input type="button" value="C" onclick="limpiar()">
+                            <input type="button" value="7" onclick="ingresarnumero(this.value)">
+                            <input type="button" value="8" onclick="ingresarnumero(this.value)">
+                            <input type="button" value="9" onclick="ingresarnumero(this.value)">
+                            <input type="button" value="/" onclick="ingresaoperacion(this.value)">
+                            <input type="button" value="4" onclick="ingresarnumero(this.value)">
+                            <input type="button" value="5" onclick="ingresarnumero(this.value)">
+                            <input type="button" value="6" onclick="ingresarnumero(this.value)">
+                            <input type="button" value="*" onclick="ingresaoperacion(this.value)">
+                            <input type="button" value="1" onclick="ingresarnumero(this.value)">
+                            <input type="button" value="2" onclick="ingresarnumero(this.value)">
+                            <input type="button" value="3" onclick="ingresarnumero(this.value)">
+                            <input type="button" value="+" onclick="ingresaoperacion(this.value)">
+                            <input type="button" value="0" onclick="ingresarnumero(this.value)">
+                            <input type="button" value="." onclick="ingresarnumero(this.value)">
+                            <input type="button" value="-" onclick="ingresaoperacion(this.value)">
+                            <input class="igual" type="button" value="=" onclick="resultado()">
+                        </div>
+                    </div>
+                    <input type="button" name="calc" id="btnCalculadora" value="abrir"/>
+                </form>
+            </center>
+        </article>
+    </section>
+</body>
+</html>
